@@ -1,0 +1,406 @@
+body {
+    font-size: 100%;
+    margin: 0;
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+    .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.15s;
+}
+#header {
+    background-color: #011827;
+    padding-top: 1.6rem;
+    padding-right: 1.6rem;
+    padding-bottom: 2.25rem;
+    padding-left: 1.65rem;
+    max-height: 144px;
+}
+.logo-and-title {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+#desktop-nav-section {
+    display: none;
+}
+#logo {
+    width: 20%;
+    height: 50.75rem;
+    object-fit: contain;
+}
+#title {
+    width: 80%;
+    margin-left: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.container {
+    background-color: #FFFFFF;
+}
+#hacker-image-mobile {
+    object-fit: cover;
+    width: 100%;
+    min-height: 274px;
+}
+#hacker-image-desktop {
+    display: none;
+}
+.onsite {
+    width: 19.2rem;
+    height: 4.1rem;
+    font-size: 1.5rem;
+    border-width: 0;
+    border-radius: 0.25rem;
+    background: #8ACFE5;
+    margin-top: 37px;
+}
+.online {
+    font-size: 1rem;
+    color: #36769D;
+    border-width: 0;
+    background: #FFFFFF;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+.button-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+#review-2 {
+    display: none;
+}
+.review {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-top: 4.1rem;
+    margin-left: 1.3rem;
+    margin-right: 1.25rem;
+}
+.review-pic {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.review-text {
+    grid-column: 3 / span 4;
+    grid-row: 1 / span 3;
+    margin: 0 0 0.625rem 1.4rem;
+    font-size: 1.5rem;
+}
+.review-caption {
+    grid-column: 3 / span 4;
+    grid-row: 4 / span 1;
+    margin-left: 1.4rem;
+    font-size: 1.125rem;
+}
+#challenges-header {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 6.5625rem;
+}
+#challenges {
+    margin-left: 0.88rem;
+    display: flex;
+    overflow-x: scroll;
+}
+#challenges::-webkit-scrollbar {
+    display: none;
+}
+.challenge {
+    margin-left: 2.37rem;
+    margin-bottom: 2.94rem;
+    height: 446px;
+    width: 363px;
+    border-radius: 8px;
+    box-shadow: 4px 8px 10px #B6BDB5;
+}
+#last-challenge {
+    margin-right: 4.06rem;
+}
+.challenge-pic {
+    object-fit: cover;
+    height: 219px;
+    width: 363px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.challenge-title {
+    font-size: 1.75rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.125rem;
+    margin-left: 1.06rem;
+}
+.stars-and-participants {
+    display: flex;
+    margin-top: 0.125rem;
+    margin-left: 1.06rem;
+}
+.star {
+    object-fit: contain;
+    height: 26px;
+    width: 23.08px;
+    scale: 0.7;
+    align-self: center;
+}
+.participants {
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-left: 0.7rem;
+    align-self: center;
+    font-size: 0.875rem;
+}
+.challenge-description {
+    margin-top: 1.0rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1.0625rem;
+    margin-left: 1.125rem;
+    font-size: 1.125rem;
+}
+.button-book {
+    margin-top: 0.3125rem;
+    margin-right: 1.125rem;
+    margin-bottom: 0.75rem;
+    padding: 0.78125rem 2.15625rem;
+    border-width: 0;
+    
+    background-color: #E3170A;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+#story {
+    margin-top: 3.50rem;
+    height: auto;
+    width: 100%;
+    background-color: #011827;
+    padding-top: 5.94rem;
+    padding-bottom: 5.69rem;
+}
+#story-teaser {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    max-width: 39.5rem;
+    font-size: 1.75rem;
+    color: #FFFFFF;
+}
+#read-story-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.63rem;
+    font-size: 1.5rem;
+    color:#8ACFE5;
+    background-color: #011827;
+    border-color: #8ACFE5;
+    border-radius: 0.25rem;
+    border-width: 0.125rem;
+    padding: 1.19rem 3.44rem;
+}
+.ad-pic {
+    width: 100%;
+    grid-column-start: 2;
+    grid-row: 2;
+    
+}
+.ad-header {
+    margin: 1.875rem auto 0;
+    width: 90%;
+    font-size: 2rem;
+}
+.ad-description {
+    margin: auto;
+    width: 90%;
+    font-size: 1.5rem;
+}
+.ad-button {
+    display: block;
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border-width: 0;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    padding: 1.19rem 3.25rem;
+    margin: 3.13rem 9.44rem 0 1.31rem;
+}
+#play-online-or-visit {
+    margin-top: 4rem;
+}
+#footer {
+    background-color: #011827;
+    color: #FFFFFF;
+    padding: 4rem 1.25rem 1.88rem 1.44rem;
+    margin-top: 6.13rem;
+}
+.footer-font-size {
+    font-size: 1.125rem;
+}
+#sitemap-header {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+#follow-us-header {
+    margin-top: 2.81rem;
+    margin-bottom: 0.5rem;
+}
+.link {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.125rem;
+}
+@media screen and (min-width: 1200px) {
+    .overlay {
+        display: none;
+    }
+    #desktop-nav-section {
+        margin-top: 3.63rem;
+        margin-bottom: 1.4rem;
+        display: block;
+    }
+    #nav-list {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    #nav-list li {
+        font-size: 1.5rem;
+    }
+    .link:hover {
+        color: #8ACFE5;
+    }
+    #hacker-image-mobile {
+        display: none;
+    }
+    #hacker-image-desktop {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+    }
+    .online {
+        font-size: 1.5rem;
+        width: 19.25rem;
+        height: 4.13rem;
+        border-width: 0;
+        border-radius: 0.25rem;
+        color: #FFFFFF;
+        background: #E3170A;
+        text-decoration: none;
+        margin: 0;
+    }
+    .onsite {
+        margin: 0;
+    }
+    .onsite-online-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;  
+    }
+    .first-buttons {
+        margin-top: -2rem;
+    }
+    #reviews {
+        display: flex;
+        gap: 1.31rem;
+        justify-content: center;
+        padding: 0 6.69rem;
+        margin-bottom: 6.75rem;
+    }
+    #review-2 {
+        display: grid;
+    }
+    #popular-challenges-section {
+        margin-bottom: 5.44rem;
+        width: 100%;
+    }
+    #challenges-header {
+        margin-bottom: 5.44rem;
+    }
+    #challenges {
+        justify-content: center;
+    }
+    .second-buttons {
+        margin-bottom: 5.44rem;
+    }
+    #story {
+        padding-top: 7.7rem;
+        padding-bottom: 8.9rem;
+        width: 100%;
+    }
+    .ad {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .ad-header, .ad-button, .ad-description {
+        margin: 0;
+    }
+    .ad-header, .ad-description {
+        margin-bottom: 1.5rem;
+    }
+    .ad-info {
+        padding: 4rem 7rem 0 7rem;
+    }
+    #play-online-or-visit {
+        margin-top: 0;
+    }
+    #play-online-pic {
+        grid-column-start: 1;
+        grid-row: 1;
+        object-fit: cover;
+    }
+    #play-online-info {
+        grid-column-start: 2;
+        grid-row: 1;
+    }
+    #footer {
+        margin-top: 11rem;
+        padding-top: 9rem;
+        padding-bottom: 11rem;
+        padding-left: 7rem;
+        display: flex;
+    }
+    #footer h2 {
+        margin-top: 0;
+    }
+    #site-description {
+        max-width: 26rem;
+    }
+    #sitemap {
+        margin-left: 14rem;
+    }
+    #follow-us {
+        margin-left: 8rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    body {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
