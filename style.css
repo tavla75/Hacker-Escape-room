@@ -39,6 +39,9 @@ body {
     padding-left: 1.65rem;
     max-height: 144px;
 }
+#meny-mobile{
+margin-left: 14rem;
+}
 .logo-and-title {
     width: 50%;
     display: flex;
