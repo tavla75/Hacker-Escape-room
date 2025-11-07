@@ -40,15 +40,26 @@ body {
     max-height: 144px;
 }
 #meny-mobile{
-margin-left: 14rem;
+margin-left: 50rem;
+cursor: pointer;
+position: absolute;
 }
 .logo-and-title {
     width: 50%;
     display: flex;
     justify-content: flex-start;
 }
-#desktop-nav-section {
-    display: none;
+#nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        margin-left: -100%;
+        transition: right 300ms ease-out;
+        
+    }
+#nav-list.show{
+    margin-left: 0;
 }
 #logo {
     width: 20%;
@@ -286,8 +297,10 @@ margin-left: 14rem;
         margin-bottom: 1.4rem;
         display: block;
     }
+    
     #nav-list {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         list-style: none;
     }
@@ -401,6 +414,9 @@ margin-left: 14rem;
     }
 }
 @media screen and (min-width: 1400px) {
+    #meny-mobile{
+        display: none;
+    }
     body {
         max-width: 1600px;
         margin-left: auto;
