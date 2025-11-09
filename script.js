@@ -1,11 +1,23 @@
-const navbar = document.getElementById('nav-list')
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.navmenu');
+const closeBtn = document.querySelector('.closeBtn');
+const header = document.querySelector('#header');
 
 
-function openbar(){
-navbar.classList.add('show')
 
-}
+hamburger.addEventListener('click',toggleMenu);
+closeBtn.addEventListener('click', toggleMenu);
 
-function closebar(){
-navbar.classList.remove('show')
+
+const overlay = document.querySelector('.overlay');
+if (overlay) overlay.addEventListener('click', () => {
+    if (navMenu.classList.contains('active')) toggleMenu();
+});
+
+
+
+function toggleMenu (){
+    navMenu.classList.toggle('active');
+    header.classList.toggle('background-state');
 }

@@ -15,19 +15,24 @@
         <section class="logo-and-title">
             <img id="logo-mobile" src="resources/Group 1.png" alt="logo">
             <h1 id="title" class="roboto-bold">Hacker Escape Rooms</h1>
-            <button id="meny-mobile" onclick="openbar()"></button> 
+            <button class="hamburger" aria-label="Open menu">
+                <img src="resources/Group 7.png" alt="menu icon">
+            </button>
         </section>
         <section id="desktop-nav-section">
-            <nav id="desktop-nav">
+            <nav id="desktop-nav" class="navmenu">
+                <button class="closeBtn" aria-label="Close menu">
+                    <img src="resources/close.png" alt="close">
+                </button>
                 <ul id="nav-list" class="roboto-bold">
-                    <li><button id="meny-mobile" onclick="closebar()"></button></li>
                     <li><a class="link" href="#">Play online</a></li>
-                    <li> <a class="link" href="#"> Play on-site</a></li>
-                    <li> <a class="link" href="#">The story</a></li>
-                    <li><a class="link" href="#"> Contact us</a></li>
+                    <li><a class="link" href="#">Play on-site</a></li>
+                    <li><a class="link" href="#">The story</a></li>
+                    <li><a class="link" href="#">Contact us</a></li>
                 </ul>
             </nav>
-            </section>
+            <div class="overlay" aria-hidden="true"></div>
+        </section>
         </header>
         <main>
             <div class="container">
